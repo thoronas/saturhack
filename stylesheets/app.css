@@ -13,6 +13,72 @@
    Shared Styles
 ----------------------------------------- */
 
+header {
+  font-family: "chennai-slab",serif;
+  font-weight: 500;
+}
+
+header h1, header h2 {
+	font-weight: 400;
+} 
+
+header h1 {
+	font-size: 9em;
+	margin: 0; 
+	line-height: 0.8em; 
+}
+
+header h2 {
+	font-size: 2em; 
+	margin: 0;
+	line-height: 1em; 
+}
+
+article {
+  font-family: "futura-pt";
+}
+
+article p {
+	font-size: 2em;
+	margin: 1em 0; 
+	line-height: 1.2em;
+}
+
+.bottom.panel {
+	margin: 20px 0 0; 
+}
+
+@media only screen and (max-width: 767px) { 
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	font-size: 6em;
+	margin: 0; 
+	line-height: 0.8em; 
+}
+h1 small, h3 small {
+	display: block;
+	margin: 10px 0;
+}
+
+article h1 {
+	margin-bottom: 30px;
+}
+}
+@media only screen and (max-width: 420px) { 
+
+header h1 {
+	font-size: 4em;
+	margin: 0; 
+	line-height: 0.8em; 
+}
+
+
+}
+
 
 
 /* -----------------------------------------
