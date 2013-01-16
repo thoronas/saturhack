@@ -1,97 +1,373 @@
-/* Artfully masterminded by ZURB  */
+/* ====================================================
 
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
+Title: saturhack.com global styles
+
+Version: 2
+Last modified: 
+Author: 
+
+==================================================== */
+
+/* --------------------------------------------------*/
+/* =resets
+   --------------------------------------------------*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+abbr, address, cite, em, img, strong, ol, ul, li, article, aside, 
+dialog, figure, footer, header, hgroup, menu, nav, section{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body{
+    line-height:1;
+}
+article, aside, dialog, figure, footer, header, 
+hgroup, nav, section{ 
+    display:block;
+}
+img, .map, object, embed{
+	max-width: 100%;
+}
+nav ul, aside ul{
+    list-style:none;
+}
+blockquote, q{
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+    content:'';
+    content:none;
+}
+a{
+    margin:0;
+    padding:0;
+    border:0;
+    vertical-align:baseline;
+    background:transparent;
+}
 
 
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
 
-header {
-  font-family: "chennai-slab",serif;
-  font-weight: 500;
+body{
+	background: #f5f1e8;
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+	padding: 0 1em 0 1em;
 }
-
-header h1, header h2 {
-	font-weight: 400;
-} 
-
-header h1 {
-	font-size: 9em;
-	margin: 0; 
-	line-height: 0.8em; 
+.location-date p, article .first-row p:last-child{
+	padding: 0;
 }
-
-header h2 {
-	font-size: 2em; 
-	margin: 0;
-	line-height: 1em; 
+.calendar-event{
+	margin-top: 1.55595em;
+	
 }
-
-article {
-  font-family: "futura-pt";
+article .row h1{
+	padding-top: 1.55595em;
+	padding-bottom: 1.55595em;		
 }
-
-article p {
-	font-size: 2em;
-	margin: 1em 0; 
-	line-height: 1.2em;
+p{
+	padding-bottom: 1em;
 }
-
-.bottom.panel {
-	margin: 20px 0 0; 
+article .inside-row{
+	background: #e9e5dc;
 }
-.bottom.panel small {
-	font-size: 0.85em;
+article .first-row{
+	margin-top: 1.55595em;
+	margin-bottom: 1.55595em;
+	background-color: #e9e5dc;
 }
-@media only screen and (max-width: 767px) { 
-
-header {
+article .first-row .column{
+	padding: 15px;
+}
+article .first-row .column:first-child{
+	border-bottom: 20px #f5f1e8 solid;
+}
+.map{
+	border: 15px solid #e9e5dc;
+}
+.inside-column-1, .inside-column-2{
+	border-bottom: 20px solid #f5f1e8;
+}
+article .t-outer-container img{
+	width: 20%;
+	float: left;
+}
+article .t-inside-container{
+	float: right;
+	width: 75%;	
+}
+article .t-inside-container p{
+	margin-top: 0.5em;
+}
+article .t-outer-container{
+	padding: 15px;
+}
+blockquote{
+	margin-top: 2em;
 	text-align: center;
 }
-
-header h1 {
-	font-size: 6em;
-	margin: 0; 
-	line-height: 0.8em; 
+blockquote p cite{
+	display: block;	
 }
-h1 small, h3 small {
-	display: block;
-	margin: 10px 0;
+blockquote img{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-right: 0.5em;
+}
+.disclaimer{
+	margin-bottom: 1em;
+	padding: 15px;
+	background-color: #e9e5dc;
+}
+/*-- =twitter widget styles override --*/
+
+#twtr-widget-1 .twtr-timeline{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.twtr-tweet-text{
+	font: 115%/1.3333 'OpenSansLight', Lucida Grande, tahoma, sans-serif;
+}
+#twtr-widget-1 .twtr-doc{
+	border-radius: 0px;
+}
+.twtr-tweet-text p em{
+	margin-top: 10px;
+}
+.twtr-widget .twtr-tweet{
+	border-bottom: 0px !important;
+	background: #e9e5dc;
+	padding: 5px 10px;
+}
+.twtr-tweet-text em a{
+	font-size: 135%;
+}
+.twtr-hd, .twtr-ft{
+	display: none;
 }
 
-article h1 {
-	margin-bottom: 30px;
+/*-- =typography --*/
+
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('../fonts/League_Gothic-webfont.eot');
+	src: local('?'), 
+	url('../fonts/League_Gothic-webfont.woff') format('woff'), 
+	url('../fonts/League_Gothic-webfont.ttf') format('truetype'), 
+	url('../fonts/League_Gothic-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSans-Light-webfont.eot');
+	src: local('?'), 
+	url('../fonts/OpenSans-Light-webfont.woff') format('woff'), 
+	url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), 
+	url('../fonts/OpenSans-Light-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-@media only screen and (max-width: 420px) { 
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	font: 87.5%/1.3333 'OpenSansLight', Lucida Grande, tahoma, sans-serif;
+}
+header h1, header h2{
+	color: #e31a22;
+	font-family: LeagueGothicRegular, lucida grande, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+header h1{
+	font-size: 1071.43%; /* 150px / 14px */
+}
+header h2{
+	font-size: 357.14%; /* 50px / 14px */
+}
+header .location-date{
+	color: #d24e04;
+	font-family: OpenSansSemibold, lucida grande, sans-serif;
+	font-size: 200%; /* 28 px / 14px */
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.11);
+    filter: dropshadow(rgba(0,0,0,0.11), offx=1, offy=1);
+}
+article .row h1{
+	color: #0378a6;
+	font-size: 200%; /* 28px / 14px */
+	font-weight: normal;
+	text-transform: uppercase;		
+}
+article .first-row .column{
+	color: #a63429;
+}
+span.front-quotes{
+	font-family: georgia, Lucida Grande, tahoma, sans-serif;
+	font-size: 514%; /*72px*/
+	color: 
+}
+blockquote p{
+	font-size: 200%;
+	color: #0378a6;
+	font-weight: bold;
+}
+blockquote p cite{
+	font-size: 50%;
+	font-weight: normal;
+	font-style: normal;
+}
+.disclaimer small{
+	font-weight: bold;
+}
 
-header h1 {
-	font-size: 4em;
-	margin: 0; 
-	line-height: 0.8em; 
+/*-- =links --*/
+
+a, a:link, a:active{
+	color: #e31a22;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+header h1 a:hover{
+	text-decoration: none;
+}
+
+/*-- =media queries --*/
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+  	
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+	body{
+  		margin: 0 auto;
+  		max-width: 68.57em; /* 960 / 14px */
+  	}
+  	header{
+  		background: url('../images/calendar.png') no-repeat top right;	
+  		padding-top: 30px;
+  	}
+  	header hgroup{
+  		float: left;
+  		width: 54.1667% ; /*520px*/
+  	}
+  	header .location-date{
+  		float: left;
+  		width: 41.6667%; /*400px*/
+  		margin-top: 28px;
+  	}
+  	header h1{
+		position: relative;
+		z-index: 1000;
+		background: #f5f1e8;
+	}
+	header h2{
+		margin-top: -145px;
+	}
+	header h1:hover{
+		text-indent: -9999px;
+		background: none;
+	}
+  	header span.location{
+  		display: block;
+  	}	
+  	header .calendar-event{
+  		float: right;
+  		text-align: right;
+  		margin-top: 20px;
+  	}
+  	article{
+  		margin-top: 50px;
+  		padding-top: 420px;
+  		background: url('../images/brain.png') no-repeat top center;
+  	}
+  	article .row{
+		padding-top: 1.55595em; /* maintain vertical rhythm*/
+		padding-bottom: 1.55595em;		
+	}
+	article .row h1{
+		padding-top: 0;
+		padding-bottom: 0;		
+	}
+  	article .row .column{
+  		float: left;
+  	}
+  	article .row .column:first-child{
+  		width: 35.4167%; /* 340px / 960px */
+  		margin-right: 2.0833%; /* 20px /960px */
+  	}
+  	article .row .column:last-child{
+  		width: 62.5%; /* 600px --- 60.4167% = 580px / 960px */
+  	}
+  	article .first-row{
+		background-image: url('../images/20-border.gif'); 
+		background-repeat: repeat-y; 
+		background-position: 50% 0px;
+	}
+  	article .first-row .column{
+		float: left;
+	}
+	article .first-row .column:first-child,
+	article .first-row .column:last-child{
+		width: 44.6875%; /* 429px / 960px */
+	}
+	article .first-row .column:first-child{
+		border-bottom: 0px;
+	}
+	article .first-row .column:last-child{
+		margin-left: 3.125%; /* 30px*/
+	}
+	article .inside-row{
+		margin-bottom: 20px;
+		background-image: url('../images/20-border.gif'); 
+		background-repeat: repeat-y; 
+		background-position: 50% 0px;
+	}
+	.inside-column-1, .inside-column-2{
+  		float: left;
+		width: 48.2759%; /*280px/580px*/
+		border-bottom: 0;
+	}
+	.inside-column-1{
+		border-right: 20px solid #f5f1e8;
+	}
+	.t-outer-container img{
+		float: left;
+	}
+	.t-inside-container{
+		float: right;
+	}
+	
+	/* links */
+	
 }
 
 
-}
 
+/* helper classes */
 
-
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
-
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
