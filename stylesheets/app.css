@@ -253,10 +253,16 @@ header h1 a:hover{
 
 /*-- =media queries --*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 767px) {
   /* Style adjustments for viewports 480px and over go here */
   	
-
+  	header h1{
+		font-size: 850%; 
+	}
+	
+	.twtr-doc {
+		width: 100% !important; 
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -299,7 +305,7 @@ header h1 a:hover{
   		margin-top: 20px;
   	}
   	article{
-  		margin-top: 50px;
+  		margin-top: 70px;
   		padding-top: 420px;
   		background: url('../images/brain.png') no-repeat top center;
   	}
